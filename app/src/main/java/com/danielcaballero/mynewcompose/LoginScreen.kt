@@ -23,11 +23,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun LoginScreen() {
+@Preview
+fun LoginInstagramScreen() {
     Box(
         Modifier
             .fillMaxSize()
@@ -238,7 +240,7 @@ fun Password(password: String, onTextChanged: (String) -> Unit) {
 @Composable
 fun ImageLogo(modifier: Modifier) {
     Image(
-        painter = painterResource(id = R.drawable.insta),
+        painter = painterResource(id = R.drawable.instagram),
         contentDescription = "logo",
         modifier = modifier.size(200.dp)
     )
